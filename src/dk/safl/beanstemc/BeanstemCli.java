@@ -16,7 +16,7 @@
  *	You should have received a copy of the GNU Lesser General Public License
  *	along with Beanstemc.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @author Simon A. F. Lund
+ *	@author Simon A. F. Lund
  * 
  */
 package dk.safl.beanstemc;
