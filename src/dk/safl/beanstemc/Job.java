@@ -11,11 +11,11 @@ public class Job {
 	}
 	
 	public byte[] getData() {
-		return this.data;
+		return data;
 	}
 	
 	public long getId() {
-		return this.id;
+		return id;
 	}
 	
 }

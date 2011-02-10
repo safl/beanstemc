@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 
 public class BeanstemcTest extends TestCase {
 	
-	private String host = "localhost";
+	private String host = "chroud.safl.dk";
 	private int port = 11300;
 	private Beanstemc beanstemc;
 	

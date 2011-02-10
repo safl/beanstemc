@@ -54,6 +54,10 @@ public class Beanstemc {
 		this(DEFAULT_HOST, DEFAULT_PORT);
 	}
 	
+	public Beanstemc(String host) throws UnknownHostException, IOException {
+		this(new Socket(host, DEFAULT_DELAY));		
+	}
+	
 	public Beanstemc(String host, int port) throws UnknownHostException, IOException {
 		this(new Socket(host, port));		
 	}
