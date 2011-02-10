@@ -1,1 +1,23 @@
+# Beanstemc
+
 A Java beanstalkd client library and command-line.
+
+## Library Usage
+
+    Beanstemc beanstemc = new Beanstemc('host', 11300);
+    Job job = beanstemc.reserve();
+    .
+    .
+    .
+    beanstemc.delete(job);
+
+## Command-line Usage
+
+    java -jar Beanstemc.jar <host> <port> put <tube> <string>
+    java -jar Beanstemc.jar <host> <port> put <tube> <file>
+    java -jar Beanstemc.jar <host> <port> watch <tube1,tube2,...,tubeN> <prefix>
+    java -jar Beanstemc.jar <host> <port> stats
+    .
+    .
+    .
+    java -jar Beanstemc.jar <host> <port> listtubes
