@@ -1,9 +1,12 @@
-package dk.safl.beanstemc;
+package dk.safl.beanstemc.tests;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+
+import dk.safl.beanstemc.Beanstemc;
+import dk.safl.beanstemc.BeanstemcException;
+import dk.safl.beanstemc.Job;
 
 import junit.framework.TestCase;
 
@@ -43,9 +46,8 @@ public class BeanstemcTest extends TestCase {
 	protected void tearDown() throws Exception {
 		super.tearDown();
 		
-		HashMap<String, String> stats = beanstemc.stats();
 		long someId = -1;
-		for(Long jobId : trash) {
+		for(int i=0; i< trash.size(); i++) {
 			try {
 				Job job = beanstemc.reserve(1);
 				someId = job.getId();
